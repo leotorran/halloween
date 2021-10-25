@@ -97,7 +97,7 @@ class Tableau1 extends Phaser.Scene{
          * contient tous les éléments du premier plan (noir)
          * @type {Phaser.GameObjects.Container}
          */
-        this.groundContainer=this.add.container(0,0);
+        this.groundContainer=this.add.container(-30,30);
         /**
          * Arbre
          * @type {Phaser.GameObjects.Image}
