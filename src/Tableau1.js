@@ -14,6 +14,7 @@ class Tableau1 extends Phaser.Scene{
         this.load.image('bg2-tree-3', 'assets/level/background-2/bg2-tree-3.png');
 
         //bg 1 (gris légèrement flou)
+        this.load.image('bg1-terrain-1', 'assets/level/background-1/bg-terrain-1.png');
         this.load.image('bg1-terrain-3', 'assets/level/background-1/bg-terrain-3.png');
 
         //ground (premier plan noir)
@@ -88,6 +89,9 @@ class Tableau1 extends Phaser.Scene{
          * Terrain
          * @type {Phaser.GameObjects.Image}
          */
+        let bg1Terrain1=this.add.image(700,300, 'bg1-terrain-1').setOrigin(0,0);
+        this.bg1Container.add(bg1Terrain1);
+
         let bg1Terrain3=this.add.image(-500,200, 'bg1-terrain-3').setOrigin(0,0);
         this.bg1Container.add(bg1Terrain3);
 
