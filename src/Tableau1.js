@@ -237,7 +237,7 @@ class Tableau1 extends Phaser.Scene{
         tronc.angle=6;
         this.groundContainer.add(tronc);
 
-        let spikeT=this.add.image(2000,500, 'spike2').setOrigin(0,1);
+        let spikeT=this.add.image(2000,530, 'spike2').setOrigin(0,1);
         spikeT.scale=1.5;
         this.groundContainer.add(spikeT);
 
